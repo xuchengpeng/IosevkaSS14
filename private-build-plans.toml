@@ -1,0 +1,32 @@
+[buildPlans.IosevkaSS14]
+family = "Iosevka SS14"
+spacing = "normal"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+noLigation = true
+
+[buildPlans.IosevkaSS14.variants]
+inherits = "ss14"
+
+[buildPlans.IosevkaSS14.variants.design]
+cv04 = 5  # 4 semi-open-serifless
+cv05 = 5  # 5 oblique-arched-serifless
+cv07 = 1  # 7 straight-serifless
+cv08 = 1  # 8 crossing
+cv10 = 4  # 0 tall-slashed
+cv17 = 2  # G toothed-serifless-hooked
+cv20 = 2  # J serifed
+cv21 = 1  # K straight-serifless
+cv26 = 4  # Q crossing
+cv32 = 1  # W straight-serifless
+cv46 = 1  # k straight-serifless
+cv57 = 1  # w straight-serifless
+VSAG = 1  # ( normal
+VSAJ = 1  # # upright
+VSAQ = 1  # ? smooth
+
+[buildPlans.IosevkaSS14.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
