@@ -47,4 +47,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: IosevkaSS14 ${{ github.ref_name }}
+          body: Iosevka with JetBrains Mono style
           files: IosevkaSS14-*.tar.gz
