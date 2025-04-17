@@ -21,6 +21,7 @@ cv21 = 1  # K straight-serifless
 cv26 = 4  # Q crossing
 cv32 = 1  # W straight-serifless
 cv46 = 1  # k straight-serifless
+cv55 = 1  # u toothed-serifless
 cv57 = 1  # w straight-serifless
 VSAG = 1  # ( normal
 VSAJ = 1  # # upright
