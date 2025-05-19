@@ -15,7 +15,7 @@ jobs:
         shell: bash
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends ttfautohint
+          sudo apt-get install -y --no-install-recommends ttfautohint zip
       - name: Build Font IosevkaSS14
         shell: bash
         run: |
@@ -25,12 +25,12 @@ jobs:
           npm install
           npm run build -- ttf::IosevkaSS14
           cd dist
-          tar -zcf IosevkaSS14-${{ github.ref_name }}.tar.gz IosevkaSS14
+          zip -9rq IosevkaSS14-${{ github.ref_name }}.zip IosevkaSS14
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: IosevkaSS14-${{ github.ref_name }}
-          path: iosevka/dist/IosevkaSS14-*.tar.gz
+          path: iosevka/dist/IosevkaSS14-*.zip
           if-no-files-found: error
   release:
     if: github.ref_type == 'tag'
@@ -48,4 +48,4 @@ jobs:
         with:
           name: IosevkaSS14 ${{ github.ref_name }}
           body: Iosevka with JetBrains Mono style
-          files: IosevkaSS14-*.tar.gz
+          files: IosevkaSS14-*.zip
