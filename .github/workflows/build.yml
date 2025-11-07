@@ -27,7 +27,7 @@ jobs:
           cd dist
           zip -9rq IosevkaSS14-${{ github.ref_name }}.zip IosevkaSS14
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: IosevkaSS14-${{ github.ref_name }}
           path: iosevka/dist/IosevkaSS14-*.zip
@@ -38,7 +38,7 @@ jobs:
     needs: build
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           path: ./
           pattern: IosevkaSS14-*
