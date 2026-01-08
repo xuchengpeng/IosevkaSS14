@@ -10,24 +10,7 @@ noLigation = true
 inherits = "ss14"
 
 [buildPlans.IosevkaSS14.variants.design]
-cv04 = 5  # 4 semi-open-serifless
-cv05 = 5  # 5 oblique-arched-serifless
-cv07 = 1  # 7 straight-serifless
-cv08 = 1  # 8 crossing
 cv10 = 2  # 0 slashed
-cv17 = 2  # G toothed-serifless-hooked
-cv20 = 2  # J serifed
-cv21 = 1  # K straight-serifless
-cv26 = 4  # Q crossing
-cv32 = 1  # W straight-serifless
-cv36 = 1  # a double-storey-serifless
-cv46 = 1  # k straight-serifless
-cv55 = 1  # u toothed-serifless
-cv57 = 1  # w straight-serifless
-cv59 = 4  # y straight-turn-serifless
-VSAG = 1  # ( normal
-VSAJ = 1  # # upright
-VSAQ = 1  # ? smooth
 
 [buildPlans.IosevkaSS14.widths.Normal]
 shape = 600
